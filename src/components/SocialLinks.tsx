@@ -30,8 +30,10 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center gap-4 mt-6">
+    <div className="flex flex-col items-center justify-center gap-4 mt-6">
       Follow us on all social media platforms:
+      <div className="flex items-center justify-center gap-4">
+
       {links.map((link) => (
         <a
           key={link.name}
@@ -42,6 +44,8 @@ const SocialLinks = () => {
           {link.icon}
         </a>
       ))}
+            </div>
+
     </div>
   );
 };
