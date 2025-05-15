@@ -24,12 +24,15 @@ const Index = () => {
         }`}
       >
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-center justify-center mb-4">
-            <img src={"/favicon.png"} width={100} height={100} />
+          <div className="flex md:items-center justify-center gap-2 mb-4">
+            <div className=" ">
+
+            <img className="object-cover w-[100px] h-[100px]" src={"/favicon.png"}  />
+            </div>
             <div className="flex flex-col items-start">
               
-            <h1 className="text-4xl text-left font-bold">Sustainability News Africa</h1>
-            <p className="text-sm mt-4 font-medium ">
+            <h1 className="text-3xl md:text-4xl text-left font-bold">Sustainability News Africa</h1>
+            <p className="text-sm mt-2 font-medium ">
               {" "}
               Telling Africa&apos;s Sustainability Stories
             </p>
@@ -40,7 +43,7 @@ const Index = () => {
             Our platform is{" "}
             <span className="text-emerald-500">launching soon</span>
           </p>
-          <p className="mb-12 max-w-xl mx-auto">
+          <p className="mb-12 max-w-xl mx-auto text-sm md:text-base">
             We are building Africa's most trusted sustainability media and
             insights hub, where uncovered stories, consolidated data, solutions
             and authentic voices converge to showcase and amplify a greener and
@@ -48,10 +51,10 @@ const Index = () => {
           </p>
           <div className="h-0.5 w-24 bg-emerald-500 mx-auto my-8"></div>{" "}
           <div className="mb-10">
-            <h3 className=" mb-3">
+            <p className=" mb-3 text-sm md:text-base">
               Be the first to know when we go live. Join us in spotlighting
               African-led sustainability solutions, innovations, and ideas.
-            </h3>
+            </p>
             <div className="flex justify-center">
               <NewsletterForm />
             </div>
