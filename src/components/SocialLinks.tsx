@@ -36,22 +36,20 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4 mt-6">
+    <div className="flex flex-col items-center justify-center gap-4 mt-6 text-sm">
       Follow us on all social media platforms:
       <div className="flex items-center justify-center gap-4">
-
-      {links.map((link) => (
-        <a
-          key={link.name}
-          href={link.url}
-          className="bg-black/30 hover:bg-emerald-900/50 backdrop-blur-sm p-2 rounded-full transition-all duration-200"
-          aria-label={`Follow us on ${link.name}`}
-        >
-          {link.icon}
-        </a>
-      ))}
-            </div>
-
+        {links.map((link) => (
+          <a
+            key={link.name}
+            href={link.url}
+            className="bg-black/30 hover:bg-emerald-900/50 backdrop-blur-sm p-2 rounded-full transition-all duration-200"
+            aria-label={`Follow us on ${link.name}`}
+          >
+            {link.icon}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
